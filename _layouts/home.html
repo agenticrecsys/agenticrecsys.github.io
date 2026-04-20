@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="Industrial tutorial on LLM-powered agentic and multi-agent frameworks for recommender systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="{{ '/' | relative_url }}" class="site-brand">
+          <span class="site-brand__mark" aria-hidden="true">◎</span>
+          <span class="site-brand__text">Agentic RecSys</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#agenda">Agenda</a>
+          <a href="#instructors">Instructors</a>
+          <a href="#materials">Materials</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__inner">
+        <span class="hero__eyebrow">RecSys 2025 · Industrial Tutorial</span>
+        <h1 class="hero__title">Multi-Agentic<br>Recommender Systems</h1>
+        <p class="hero__subtitle">Foundations, Design Patterns, and E-Commerce Applications</p>
+        <p class="hero__lede">A practical, industry-informed perspective on <strong>LLM-powered agentic and multi-agent frameworks</strong> for recommender systems — covering real-world design patterns, orchestration workflows, and deployment considerations.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="{{ '/tutorial' | relative_url }}">Start the tutorial</a>
+          <a class="btn btn--ghost" href="#agenda">View agenda</a>
+          <a class="btn btn--ghost" href="{{ '/slides' | relative_url }}">Slides</a>
+          <a class="btn btn--ghost" href="{{ '/notebooks' | relative_url }}">Notebooks</a>
+          <a class="btn btn--ghost" href="{{ '/resources' | relative_url }}">Resources</a>
+        </div>
+        <dl class="hero__meta">
+          <div><dt>Length</dt><dd>~3 hours · half-day</dd></div>
+          <div><dt>Level</dt><dd>Intermediate → Advanced</dd></div>
+          <div><dt>Format</dt><dd>Concepts + patterns + hands-on</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <main class="page">
+      <div class="page__inner markdown-body">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__block">
+          <h4>Citation</h4>
+          <p><code>10.1145/3705328.3748008</code></p>
+        </div>
+        <div class="site-footer__block">
+          <h4>License</h4>
+          <p>Released under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+        </div>
+        <div class="site-footer__block">
+          <h4>Support</h4>
+          <p>Walmart Inc. · DeepMind Technologies Ltd. · Polytechnic University of Bari</p>
+        </div>
+      </div>
+      <div class="site-footer__rule">© {{ site.time | date: '%Y' }} Agentic RecSys Tutorial</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add('.markdown-body h2, .markdown-body h3');</script>
+  </body>
+</html>
