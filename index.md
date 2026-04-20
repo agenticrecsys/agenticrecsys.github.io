@@ -25,11 +25,11 @@ Examples and patterns discussed include **context-aware recommendation**, **dyna
 
 | Instructor                | Affiliation                            |
 | ------------------------- | -------------------------------------- |
-| **Reza Yousefi Maragheh** | Walmart Global Tech (USA)              |
-| **Yashar Deldjoo**        | Polytechnic University of Bari (Italy) |
-| **Chi Wang**              | Google DeepMind (USA / UK)             |
-| **Jason Cho**             | Walmart Global Tech (USA)              |
-| **Derek Cheng**           | Google DeepMind (USA / UK)             |
+| **Reza Yousefi Maragheh** | Walmart Global Tech                    |
+| **Yashar Deldjoo**        | Polytechnic University of Bari         |
+| **Chi Wang**              | Google DeepMind                        |
+| **Jason Cho**             | Walmart Global Tech                    |
+| **Derek Cheng**           | Google DeepMind                        |
 
 ## What you'll learn
 
@@ -52,43 +52,6 @@ By the end of this tutorial, you should be able to:
   * hallucinations and error propagation
   * transparency, fairness, bias, and privacy risks
 
-## Tutorial agenda
-{: #agenda }
-
-### A. Introduction and background (≈15 min)
-
-* Key properties in modern RecSys (e.g., accuracy, alignment, context-awareness, scalability)
-* How LLM-era techniques relate to these goals (from prompting to multi-agent systems)
-* A motivating running example (e.g., a multi-step "personalized birthday planner" workflow)
-
-### B. Alphabets of multi-agentic AI (≈45 min)
-
-* Memory moderation & retrieval mechanisms
-* Function calling & tool usage
-* Orchestration protocols / standardization
-* Reasoning load balancing and practical orchestration strategies
-* Improving the running example via these components
-
-### C. Industrial agentic RecSys implementations (≈60 min)
-
-* Tasks and patterns (conversational, autonomous, evaluation/simulation, explanations)
-* Best practices for large-scale agentic pipelines (standards, pitfalls, optimization)
-
-### D. Hands-on demonstration (≈30–45 min)
-
-* Overview of commonly used frameworks
-* Live walkthrough of a multi-step recommendation scenario:
-  * components & architecture
-  * initial implementation
-  * debugging and diagnosing failure points
-  * iterative refinement
-
-### E. Challenges & future directions (≈15 min)
-
-* Communication complexity, scalability constraints, hallucinations, and robustness
-* Fairness / privacy / unintended behaviors and mitigation strategies
-* Future directions: multi-agent synergy, advanced memory, self-improving systems
-
 ## Who this is for
 
 This tutorial is designed for:
@@ -100,15 +63,23 @@ This tutorial is designed for:
 ## Materials and companion resources
 {: #materials }
 
-This site is intended to host (or link to) the tutorial's:
-
 * slides
-* demo architecture diagrams
-* hands-on notebooks
-* curated resources and reading list
+* architecture diagrams
+
 
 ## Citation
 
-If you'd like to cite the tutorial, you can reference it using the DOI:
+If you find this tutorial useful in your research or work, feel free to cite our tutorial:
 
-`10.1145/3705328.3748008`
+```bibtex
+@inproceedings{yousefi2025multi,
+  title={Multi-Agentic Recommender Systems: Foundations, Design Patterns, and E-Commerce Applications—An Industrial Tutorial},
+  author={Yousefi Maragheh, Reza and Deldjoo, Yashar and Wang, Chi and Cho, Jason and Cheng, Derek},
+  booktitle={Proceedings of the Nineteenth ACM Conference on Recommender Systems},
+  pages={1427--1429},
+  year={2025}
+}
+```
+
+
+Yousefi Maragheh, R., Deldjoo, Y., Wang, C., Cho, J., & Cheng, D. (2025). Multi-Agentic Recommender Systems: Foundations, Design Patterns, and E-Commerce Applications—An Industrial Tutorial. In *Proceedings of the Nineteenth ACM Conference on Recommender Systems* (pp. 1427–1429).
