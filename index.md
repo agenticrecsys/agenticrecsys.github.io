@@ -63,8 +63,12 @@ This tutorial is designed for:
 ## Materials and companion resources
 {: #materials }
 
-* slides
+* [**Slides (PDF)**]({{ '/assets/slides/Presentation_compressed.pdf' | relative_url }}) — full tutorial deck
 * architecture diagrams
+
+<object class="slides-embed" data="{{ '/assets/slides/Presentation_compressed.pdf' | relative_url }}" type="application/pdf" aria-label="Tutorial slides">
+  <p>Your browser can't display the embedded PDF. <a href="{{ '/assets/slides/Presentation_compressed.pdf' | relative_url }}">Download the slides</a>.</p>
+</object>
 
 
 ## Citation

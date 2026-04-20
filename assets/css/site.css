@@ -292,6 +292,17 @@ code {
 .markdown-body h2:hover .anchorjs-link,
 .markdown-body h3:hover .anchorjs-link { opacity: 1; }
 
+.slides-embed {
+  display: block;
+  width: 100%;
+  height: min(80vh, 720px);
+  margin: 20px 0 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  box-shadow: var(--shadow-sm);
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: #0b1020;
