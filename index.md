@@ -10,7 +10,7 @@ permalink: /
 
 Welcome! This website hosts the materials for the industrial tutorial **“Multi-Agentic Recommender Systems: Foundations, Design Patterns, and E-Commerce Applications.”** The tutorial shares a practical, industry-informed perspective on **LLM-powered agentic and multi-agent frameworks for recommender systems**, with an emphasis on real-world design patterns, orchestration workflows, and deployment considerations.
 
-**Quick links (placeholders):**
+**Quick links (placeholders):** 
 
 * [Start the tutorial](./tutorial)
 * [Agenda](#tutorial-agenda)
