@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | default: site.title }}</title>
-    <meta name="description" content="Industrial tutorial on LLM-powered agentic and multi-agent frameworks for recommender systems.">
+    <meta name="description" content="{{ page.description | default: 'Industrial tutorial on LLM-powered agentic and multi-agent frameworks for recommender systems.' }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -19,23 +19,40 @@
           <span class="site-brand__text">Agentic RecSys</span>
         </a>
         <nav class="site-nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#instructors">Instructors</a>
-          <a href="#materials">Materials</a>
+          {% if page.nav %}
+            {% for item in page.nav %}
+              {% assign first = item.href | slice: 0 %}
+              {% if first == '#' %}
+                <a href="{{ item.href }}">{{ item.label }}</a>
+              {% else %}
+                <a href="{{ item.href | relative_url }}">{{ item.label }}</a>
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            <a href="#about">About</a>
+            <a href="#instructors">Instructors</a>
+            <a href="#materials">Materials</a>
+          {% endif %}
         </nav>
       </div>
     </header>
 
     <section class="hero">
       <div class="hero__inner">
-        <span class="hero__eyebrow">RecSys 2025 · Industrial Tutorial</span>
-        <h1 class="hero__title">Multi-Agentic<br>Recommender Systems</h1>
-        <p class="hero__subtitle">Foundations, Design Patterns, and E-Commerce Applications</p>
-        <p class="hero__lede">A practical, industry-informed perspective on <strong>LLM-powered agentic and multi-agent frameworks</strong> for recommender systems — covering real-world design patterns, orchestration workflows, and deployment considerations.</p>
+        <span class="hero__eyebrow">{{ page.eyebrow | default: 'RecSys 2025 · Industrial Tutorial' }}</span>
+        <h1 class="hero__title">{{ page.hero_title | default: 'Multi-Agentic<br>Recommender Systems' }}</h1>
+        <p class="hero__subtitle">{{ page.hero_subtitle | default: 'Foundations, Design Patterns, and E-Commerce Applications' }}</p>
+        <p class="hero__lede">{{ page.hero_lede | default: 'A practical, industry-informed perspective on <strong>LLM-powered agentic and multi-agent frameworks</strong> for recommender systems — covering real-world design patterns, orchestration workflows, and deployment considerations.' }}</p>
         <dl class="hero__meta">
-          <div><dt>Length</dt><dd>~3 hours · half-day</dd></div>
-          <div><dt>Level</dt><dd>Intermediate → Advanced</dd></div>
-          <div><dt>Format</dt><dd>Concepts + patterns + hands-on</dd></div>
+          {% if page.hero_meta %}
+            {% for m in page.hero_meta %}
+              <div><dt>{{ m.label }}</dt><dd>{{ m.value }}</dd></div>
+            {% endfor %}
+          {% else %}
+            <div><dt>Length</dt><dd>~3 hours · half-day</dd></div>
+            <div><dt>Level</dt><dd>Intermediate → Advanced</dd></div>
+            <div><dt>Format</dt><dd>Concepts + patterns + hands-on</dd></div>
+          {% endif %}
         </dl>
       </div>
     </section>
@@ -50,7 +67,7 @@
       <div class="site-footer__inner">
         <div class="site-footer__block">
           <h4>Citation</h4>
-          <p><code>10.1145/3705328.3748008</code></p>
+          <p><code>{{ page.footer_citation | default: '10.1145/3705328.3748008' }}</code></p>
         </div>
         <div class="site-footer__block">
           <h4>License</h4>
@@ -58,7 +75,7 @@
         </div>
         <div class="site-footer__block">
           <h4>Support</h4>
-          <p>Walmart Inc. · DeepMind Technologies Ltd. · Polytechnic University of Bari</p>
+          <p>{{ page.footer_support | default: 'Walmart Inc. · DeepMind Technologies Ltd. · Polytechnic University of Bari' }}</p>
         </div>
       </div>
       <div class="site-footer__rule">© {{ site.time | date: '%Y' }} Agentic RecSys Tutorial</div>

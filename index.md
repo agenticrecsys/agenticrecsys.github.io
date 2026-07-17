@@ -2,88 +2,50 @@
 layout: home
 title: Multi-Agentic Recommender Systems
 permalink: /
+description: "Tutorial series on multi-agentic recommender systems — LLM-powered agentic and multi-agent frameworks for recommendation."
+eyebrow: "Tutorial Series"
+hero_title: "Multi-Agentic<br>Recommender Systems"
+hero_subtitle: "Foundations, design patterns, and lessons from large-scale deployments"
+hero_lede: "An industrial tutorial on <strong>LLM-powered agentic and multi-agent frameworks</strong> for recommender systems. Presented at RecSys 2025 and returning — expanded — for SIGIR 2026. Choose an edition below."
+hero_meta:
+  - label: "Editions"
+    value: "Two"
+  - label: "Latest"
+    value: "SIGIR 2026 · Melbourne"
+  - label: "Focus"
+    value: "Agentic & multi-agent RecSys"
+nav:
+  - label: "RecSys 2025"
+    href: "/recsys2025/"
+  - label: "SIGIR 2026"
+    href: "/sigir2026/"
+footer_citation: "10.1145/3805712.3808643"
+footer_support: "Walmart Global Tech · Google DeepMind · Polytechnic University of Bari · AG2AI"
 ---
 
-## About the tutorial
+## Editions
+{: #editions }
+
+This tutorial has been presented in two editions. Each page carries its own outline, presenters, logistics, and materials.
+
+<div class="edition-grid">
+  <a class="edition-card" href="{{ '/sigir2026/' | relative_url }}">
+    <span class="edition-card__eyebrow">SIGIR 2026 · Melbourne</span>
+    <span class="edition-card__title">2026 edition</span>
+    <span class="edition-card__desc">Foundations, Perspectives, and Lessons from Large Scale Deployments. Monday 20 July 2026, Melbourne Convention and Exhibition Centre.</span>
+    <span class="edition-card__cta">View the SIGIR 2026 tutorial →</span>
+  </a>
+  <a class="edition-card" href="{{ '/recsys2025/' | relative_url }}">
+    <span class="edition-card__eyebrow">RecSys 2025 · Industrial Tutorial</span>
+    <span class="edition-card__title">2025 edition</span>
+    <span class="edition-card__desc">Foundations, Design Patterns, and E-Commerce Applications. The original half-day industrial tutorial, with slides and companion materials.</span>
+    <span class="edition-card__cta">View the RecSys 2025 tutorial →</span>
+  </a>
+</div>
+
+## About the series
 {: #about }
 
 Modern recommender systems have made major progress, but many large-scale, user-facing solutions still behave like **static "one-shot" recommenders**. As user expectations shift toward **interactive, context-aware, and adaptive experiences**, recommender systems increasingly need to support **multi-step reasoning**, **tool use**, **memory**, and **autonomous orchestration**.
 
-This tutorial focuses on how recent advances in **large language models (LLMs)** enable a new class of recommender systems: **agentic** (and often **multi-agent**) systems that can:
-
-* reason over evolving user needs,
-* interact through dialog and longer context,
-* call tools and external APIs,
-* orchestrate multi-step workflows,
-* refine outputs using constraints and feedback,
-* and support practical production requirements (reliability, scalability, transparency, safety).
-
-Examples and patterns discussed include **context-aware recommendation**, **dynamic multi-step orchestration**, and **personalized recommendation pipelines**, culminating in a hands-on session that bridges concepts with implementation.
-
-## Instructors
-{: #instructors }
-
-| Instructor                | Affiliation                            |
-| ------------------------- | -------------------------------------- |
-| **Reza Yousefi Maragheh** | Walmart Global Tech                    |
-| **Yashar Deldjoo**        | Polytechnic University of Bari         |
-| **Chi Wang**              | Google DeepMind                        |
-| **Jason Cho**             | Walmart Global Tech                    |
-| **Derek Cheng**           | Google DeepMind                        |
-
-## What you'll learn
-
-By the end of this tutorial, you should be able to:
-
-* Understand the shift from traditional recommenders to **LLM-powered, interactive, agentic systems**
-* Recognize the core building blocks ("alphabets") of multi-agentic systems, including:
-  * **memory types and retrieval strategies**
-  * **function calling and tool usage**
-  * **orchestration protocols / interfaces**
-  * **reasoning load balancing** across steps or agents
-* Apply common **agentic RecSys design patterns** for:
-  * conversational recommendation
-  * context-aware autonomous recommendation
-  * recommendation evaluation and user simulation
-  * explanation generation
-* Gain hands-on familiarity with frameworks commonly used for agentic pipelines (e.g., multi-agent and orchestration frameworks)
-* Identify practical pitfalls and open challenges such as:
-  * scalability and latency constraints
-  * hallucinations and error propagation
-  * transparency, fairness, bias, and privacy risks
-
-## Who this is for
-
-This tutorial is designed for:
-
-* **PhD students and researchers** exploring agentic systems for recommendation
-* **Senior researchers and practitioners** working with generative/LLM-based RecSys
-* **Industry teams** looking for practical patterns to move from prototypes to scalable systems
-
-## Materials and companion resources
-{: #materials }
-
-* [**Slides (PDF)**]({{ '/assets/slides/Presentation_compressed.pdf' | relative_url }}) — full tutorial deck
-* architecture diagrams
-
-<object class="slides-embed" data="{{ '/assets/slides/Presentation_compressed.pdf' | relative_url }}" type="application/pdf" aria-label="Tutorial slides">
-  <p>Your browser can't display the embedded PDF. <a href="{{ '/assets/slides/Presentation_compressed.pdf' | relative_url }}">Download the slides</a>.</p>
-</object>
-
-
-## Citation
-
-If you find this tutorial useful in your research or work, feel free to cite our tutorial:
-
-```bibtex
-@inproceedings{yousefi2025multi,
-  title={Multi-Agentic Recommender Systems: Foundations, Design Patterns, and E-Commerce Applications—An Industrial Tutorial},
-  author={Yousefi Maragheh, Reza and Deldjoo, Yashar and Wang, Chi and Cho, Jason and Cheng, Derek},
-  booktitle={Proceedings of the Nineteenth ACM Conference on Recommender Systems},
-  pages={1427--1429},
-  year={2025}
-}
-```
-
-
-Yousefi Maragheh, R., Deldjoo, Y., Wang, C., Cho, J., & Cheng, D. (2025). Multi-Agentic Recommender Systems: Foundations, Design Patterns, and E-Commerce Applications—An Industrial Tutorial. In *Proceedings of the Nineteenth ACM Conference on Recommender Systems* (pp. 1427–1429).
+This tutorial series explores how recent advances in **large language models (LLMs)** enable a new class of **agentic** (and often **multi-agent**) recommender systems — bringing together perspectives from **information retrieval**, **recommender systems**, and **large-scale industrial practice**, with reusable design patterns and lessons learned from real deployments.
