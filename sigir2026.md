@@ -38,7 +38,7 @@ footer_support: "Walmart Global Tech · Google DeepMind · Polytechnic Universit
 | **Date**                 | Monday, 20 July 2026                                         |
 | **Location**             | Melbourne Convention and Exhibition Centre, Melbourne, Australia |
 | **Room**                 | Eureka 3                                                     |
-| **Session time**         | <span class="tbd">TBD</span>, to be confirmed in the final program |
+| **Session time**         | 9:00 am to 12:00 pm (local time)                            |
 | **Official listing**     | [SIGIR 2026 accepted tutorials](https://sigir2026.org/en-AU/pages/program/accepted-tutorials) |
 
 ## About the tutorial
