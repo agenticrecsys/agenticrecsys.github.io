@@ -99,6 +99,16 @@ Presented by Reza Yousefi Maragheh.
   <p>Your browser can't display the embedded PDF. <a href="{{ '/assets/slides/sigir-Reza_compressed.pdf' | relative_url }}">Download the slides</a>.</p>
 </object>
 
+### Part 3: Harness Engineering in Recommendation Systems Implementations and Practical Hurdles in Deploying Agents
+
+Presented by Jason Cho.
+
+[**Download slides (PDF)**]({{ '/assets/slides/sigir-Jason.pdf' | relative_url }})
+
+<object class="slides-embed" data="{{ '/assets/slides/sigir-Jason.pdf' | relative_url }}" type="application/pdf" aria-label="Part 3 slides: Harness Engineering in Recommendation Systems Implementations and Practical Hurdles in Deploying Agents">
+  <p>Your browser can't display the embedded PDF. <a href="{{ '/assets/slides/sigir-Jason.pdf' | relative_url }}">Download the slides</a>.</p>
+</object>
+
 ### Part 4: Self-Evolving Recommendation Systems
 
 Presented by Benjamin Coleman.
