@@ -87,7 +87,30 @@ This tutorial is aimed at SIGIR attendees working on IR, recommendation, and LLM
 ## Materials
 {: #materials }
 
-* **Slides / materials:** <span class="tbd">TBD</span>. The <span class="link-disabled">Slides (PDF)</span> will be posted here after the tutorial. *(Link to be added.)*
+Slide decks are posted below as they become available. Remaining parts are <span class="tbd">TBD</span>.
+
+### Part 2: Formalism and Lessons from Large Scale Deployments
+
+Presented by Reza Yousefi Maragheh.
+
+[**Download slides (PDF)**]({{ '/assets/slides/sigir-Reza_compressed.pdf' | relative_url }})
+
+<object class="slides-embed" data="{{ '/assets/slides/sigir-Reza_compressed.pdf' | relative_url }}" type="application/pdf" aria-label="Part 2 slides: Formalism and Lessons from Large Scale Deployments">
+  <p>Your browser can't display the embedded PDF. <a href="{{ '/assets/slides/sigir-Reza_compressed.pdf' | relative_url }}">Download the slides</a>.</p>
+</object>
+
+### Part 4: Self-Evolving Recommendation Systems
+
+Presented by Benjamin Coleman.
+
+[**Download slides (PDF)**]({{ '/assets/slides/sigir-Ben.pdf' | relative_url }})
+
+<object class="slides-embed" data="{{ '/assets/slides/sigir-Ben.pdf' | relative_url }}" type="application/pdf" aria-label="Part 4 slides: Self-Evolving Recommendation Systems">
+  <p>Your browser can't display the embedded PDF. <a href="{{ '/assets/slides/sigir-Ben.pdf' | relative_url }}">Download the slides</a>.</p>
+</object>
+
+### Other materials
+
 * **Supplementary material** *(planned)*: sample pseudocode for the different stages of productionizing a use case; example prompts, agent-role templates, and orchestration skeletons; and, where feasible, small toy datasets or public data excerpts suitable for demonstration.
 * **Curated reading list** *(planned)*: a survey plus representative papers to help attendees continue learning after the tutorial.
 
