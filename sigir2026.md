@@ -119,6 +119,16 @@ Presented by Benjamin Coleman.
   <p>Your browser can't display the embedded PDF. <a href="{{ '/assets/slides/sigir-Ben.pdf' | relative_url }}">Download the slides</a>.</p>
 </object>
 
+### Part 5: AgentOS Evolution
+
+Presented by Chi Wang.
+
+[**Download slides (PDF)**]({{ '/assets/slides/sigir-Chi.pdf' | relative_url }})
+
+<object class="slides-embed" data="{{ '/assets/slides/sigir-Chi.pdf' | relative_url }}" type="application/pdf" aria-label="Part 5 slides: AgentOS Evolution">
+  <p>Your browser can't display the embedded PDF. <a href="{{ '/assets/slides/sigir-Chi.pdf' | relative_url }}">Download the slides</a>.</p>
+</object>
+
 ### Other materials
 
 * **Supplementary material** *(planned)*: sample pseudocode for the different stages of productionizing a use case; example prompts, agent-role templates, and orchestration skeletons; and, where feasible, small toy datasets or public data excerpts suitable for demonstration.
