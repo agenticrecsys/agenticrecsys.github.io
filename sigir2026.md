@@ -87,7 +87,17 @@ This tutorial is aimed at SIGIR attendees working on IR, recommendation, and LLM
 ## Materials
 {: #materials }
 
-Slide decks are posted below as they become available. Remaining parts are <span class="tbd">TBD</span>.
+Slide decks for each part of the tutorial are below.
+
+### Part 1: From Generative to Agentic RecSys
+
+Presented by Yashar Deldjoo.
+
+[**Download slides (PDF)**]({{ '/assets/slides/Yashar_presentation.pdf' | relative_url }})
+
+<object class="slides-embed" data="{{ '/assets/slides/Yashar_presentation.pdf' | relative_url }}" type="application/pdf" aria-label="Part 1 slides: From Generative to Agentic RecSys">
+  <p>Your browser can't display the embedded PDF. <a href="{{ '/assets/slides/Yashar_presentation.pdf' | relative_url }}">Download the slides</a>.</p>
+</object>
 
 ### Part 2: Formalism and Lessons from Large Scale Deployments
 
